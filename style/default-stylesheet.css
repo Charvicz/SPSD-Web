@@ -1,0 +1,244 @@
+/*CSS Document*/
+
+@media (min-width: 600px) {
+    body {
+        background-color:  #252525;
+    }
+}
+
+@media (max-width: 599px) {
+    body {
+        background-color:#ffffff
+    }
+}
+
+body{
+    align-items:center;
+    justify-content:center;
+    height:100vh;
+    animation-name: test;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;  
+}
+@keyframes test
+{
+    0% {background-color: (#FF0018);}
+    20% {background-color: (#FFA52C);}
+    40% {background-color: (#FFFF41);}
+    60% {background-color: (#008018);}
+    80% {background-color: (#0000F9);}
+    100% {background-color: (#86007D);}
+}
+
+
+#navbar
+{
+    animation-name: test;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;  
+    position: absolute;
+    left: 20%;
+    width:60%;
+    height:60px;
+    top: 34%;
+    border-radius: 10px;
+}
+@keyframes test
+{
+    0% {background-color: rgb(127, 0, 0);}
+    20% {background-color: rgb(127, 127, 0);}
+    40% {background-color: rgb(0, 127, 0);}
+    60% {background-color: rgb(0, 127, 127);}
+    80% {background-color: rgb(127, 0, 127);}
+    100% {background-color: rgb(127, 0, 0);}
+}
+
+.nadpis
+{
+    position: absolute;
+    left: 21%;
+    height:50%;
+    top: 35%; 
+}
+
+.text-uz
+{
+    background-color: rgb(117, 117, 117);
+    position: absolute;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.HK-logo /*hlavní logo*/
+{
+    position: absolute;
+    left: 20%;
+    width:60%;
+    z-index: 0;
+}
+
+.obrazek-huf {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 9000;
+}
+
+.main
+{   
+    background-color: rgb(117, 117, 117);
+    position: absolute;
+    border-radius: 10px;
+    margin-left: 20%;
+    width:60%;
+    height:100%;
+    top: 41%;
+}
+
+img {
+    border-radius: 10px;
+}
+
+A {/*texz bez podtržení*/
+    text-decoration:none;  
+}
+.prvni-Lišta-Pøíspìvek
+{
+    background-color: #ffffff;
+    border-radius: 10px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    width: 55%; 
+    font-size: 24px;
+    padding-left: 43%;
+    color: black;
+}
+
+.prvni-Menu-Pøíspìvek 
+{
+    background-color: #ffffff;
+    border-radius: 10px;
+    position: absolute;
+    height: 62px;
+    left: 1%;
+    top: 45px;
+    width: 88.5%;    
+    padding-left: 110px;
+    padding-top: 40px;
+    color:black;
+}
+
+.prvni-Obrázek-Pøíspìvek
+{
+    border-radius: 10px;
+    position: absolute;
+    left: 14px;
+    top: 46px;
+    height: 99px;
+    width: 99px;
+}
+
+*
+{
+    padding:0;
+    margin:0;
+}
+
+.wrapper
+{
+    position: absolute;
+    left: 49%;
+    height:50%;
+    top: 34.5%;
+}
+
+.wrapper :is(.btn, .link)
+{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    width:50px;
+    height:50px;
+    background-color:#fff;
+    color:#151515;
+    border-radius:50%;
+}
+
+.btn
+{
+    position:absolute;
+    border:none;
+    cursor:pointer;
+    z-index:10;
+    transition: outline  .25s;
+}
+
+.active .btn
+{
+outline:2px solid #bb935c;
+outline-offset: -4px;
+}
+
+.item
+{
+    position:absolute;
+    list-style:none;
+    transition: transform  .5s;
+    transition-delay: var(0.5s);
+}
+
+p {
+    font-size: 140px;
+}
+
+.item a
+{
+    text-decoration: none;
+    cursor:pointer;
+}
+
+.wrapper.active .item:nth-child(1)
+{
+    transform:translateX(-300px);
+}
+.wrapper.active .item:nth-child(2)
+{
+    transform:translateX(-150px);
+}
+.wrapper.active .item:nth-child(3)
+{
+    transform:translateX(150px);
+}
+.wrapper.active .item:nth-child(4)
+{
+    transform:translateX(300px);
+}
+
+#main-content {
+    margin-top: 70px;
+    margin-left: 10px;
+    text-align: center;
+    
+}
+.zcard{
+    background-color: rgb(47, 47, 47);
+    width:50%;
+    margin-left: 25%;
+    width:50%;
+    height:50%;
+    text-align: center;
+    border-radius: 20px
+    
+}
+.zcard p{
+margin-left: 20px;
+padding-top: 20px;
+padding-bottom: 20px;
+}
+#AIread {
+    font-family: 'Libre Barcode 39', cursive;
+    font-size: 70px;
+    text-align: center;
+    color: black;
+}

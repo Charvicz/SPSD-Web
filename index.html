@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Hvezdokupa</title>
+    <link rel="shortcut icon" img src="https://cdn0.iconfinder.com/data/icons/essentials-28/24/Login-512.png">
+    <link rel="stylesheet" type="text/css" href="style/default-stylesheet.css" />
+    <link rel="stylesheet" type="text/css" href="style/Main.css">
+    <link rel="stylesheet" type="text/css" href="login.css">
+    <link rel="stylesheet" type="text/css" href="style/wrapper.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Barcode+39&display=swap" rel="stylesheet>
+    <meta charset="utf-8">
+    <meta name="color-scheme" content="light">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+
+    <div id="navbar"></div> <!--navigační panel-->>
+    <div class="nadpis"><h1>Hlavní stránka</h1></div> <!--text orientace na stránce-->
+    <div class="wrapper">
+        <!--wrapper-->
+
+        <button class="btn">
+            <!--otevíratelné menu-->
+            <i class="icons fa fa-share-alt"><img src="https://cdn4.iconfinder.com/data/icons/navigation-40/24/hamburger-menu-512.png" width="35px" height="35px"></i>
+        </button>
+
+        <ul class="list">
+            <!--seznam co se otevře-->
+            <li class="item">
+                <a href="index.html" class="link">
+                    <i class="fa fa-home"><img src="https://cdn4.iconfinder.com/data/icons/eon-ecommerce-i-1/32/home_house_desktop_dashboard-512.png" width="35px" height="35px"></i>
+                </a>
+            </li>
+
+            <li class="item">
+                <a href="menu.html" class="link">
+                    <i class="fa fa-comunity"><img src="https://cdn4.iconfinder.com/data/icons/turu-education-set/48/Artboard_8-512.png" width="40px" height="40px"></i>
+                </a>
+            </li>
+
+            <li class="item">
+                <a href="card.html" class="link">
+                    <i class="fa fa-card"><img src="https://cdn4.iconfinder.com/data/icons/48-bubbles/48/31.ID-Horizontal-512.png" width="35px" height="35px">  </i>
+                </a>
+            </li>
+
+            <li class="item">
+                <a href="login.html" class="link">
+                    <i class="fa fa-logout"><img src="https://cdn4.iconfinder.com/data/icons/interface-essentials-1-6/32/logout_go_out_exit_door_escape-512.png" width="30px" height="30px">  </i>
+                </a>
+            </li>
+    </div><!--konec wrapper-->
+
+    <div class="main">
+        <!--hlavní část webu-->
+        <div class="prvni-Lišta-Příspěvek">
+            <a href="uvitaci-zprava.html" class="link">
+                <p style="color:black">Uvítací zpráva</p>
+            </a>
+        </div>
+
+        <div class="prvni-Menu-Příspěvek">
+            <a href="uvitaci-zprava.html" class="link">
+
+            </a>
+        </div>
+
+        <div class="prvni-Obrázek-Příspěvek">
+            <a href="uvitaci-zprava.html" class="link">
+                <img src="http://logostribu.atelier801.com/7900/1097900.jpg?1667797218698">
+            </a>
+        </div>
+    </div>
+
+    <div id="main-content">
+        <div id="main-title">
+            <h1>BARCODE</h1>
+        </div>
+        <div class="zcard">
+            <p id="AIread">51951952266</p>
+            51951952266<br>
+            hruncak
+            </p>
+        </div>
+
+
+        <script>
+            const btnEl = document.querySelector('.btn');
+            const iconEl = document.querySelector('.icons');
+            const toggleOptions = () =>
+            {
+                const wrapper = document.querySelector('.wrapper');
+            console.log(iconEl);
+            wrapper.classList.toggle('active');
+            if (iconEl.classList.contains('fa-share-alt')) {
+                iconEl.classList.replace('fa-share-alt','fa-close');
+            } else {
+                iconEl.classList.replace('fa-close', 'fa-share-alt');
+            }
+            };
+            btnEl.addEventListener('click', toggleOptions);
+
+            function switchTheme() {
+                const theme = document.getElementById("theme").value;
+                document.getElementsByTagName("meta")[2].content = theme;
+            }
+        </script>
+
+</body>
+</html>
